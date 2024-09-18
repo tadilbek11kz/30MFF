@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f3f4f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    fill: #dc2626;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #dc2626;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b91c1c;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about {
+    padding: 4rem 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.rating {
+    margin-top: 1rem;
+}
+
+.rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+.rating button.active {
+    color: #fbbf24;
+}
+
+.watch {
+    background-color: #111827;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.watch h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq {
+    padding: 4rem 0;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header {
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion-content {
+    padding: 1rem 0;
+    display: none;
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+footer ul li a {
+    color: #6b7280;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Responsive video container */
+#video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+#procrastination-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Burger menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Active state for accordion */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-item.active .accordion-header::after {
+    content: "-";
+}
+
+.accordion-header::after {
+    content: "+";
+    float: right;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    /* Match your site's background */
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Box shadow for depth */
+    max-width: 500px;
+    /* Max width for modal */
+}
+
+.close {
+    color: #aaa;
+    /* Close button color */
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: #dc2626;
+    /* Change color on hover */
+}
+
+#surveyForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#surveyForm label {
+    margin-top: 10px;
+}
+
+#surveyForm input,
+#surveyForm select,
+#surveyForm textarea {
+    margin-top: 5px;
+    padding: 10px;
+    /* Increased padding for inputs */
+}
+
+#surveyForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dc2626;
+    /* Match your site's button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners for button */
+}
+
+#surveyForm button:hover {
+    background-color: #b91c1c;
+    /* Darker shade on hover */
+}

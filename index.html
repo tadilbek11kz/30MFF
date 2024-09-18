@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination - A 90-Second Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Procrastination
+            </a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>"Procrastination"</h1>
+                <p>A fast-paced look at the art of avoiding what really matters.</p>
+                <a href="#watch" class="btn">Watch Video</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About the Video</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="/assets/img/procrastination-thumbnail.png" alt="Procrastination Video Thumbnail">
+                    </div>
+                    <div class="about-text">
+                        <p>"Procrastination" is a witty 90-second video that showcases the all-too-familiar dance of avoiding important tasks. Through a series of fast-forwarded scenes, we see the protagonist engaging in various activities that look
+                            productive but are, in reality, just clever ways to procrastinate.</p>
+                        <p>Created by an anonymous procrastinator, this video holds a mirror to our daily struggles with time management and productivity.</p>
+                        <div class="rating">
+                            <span>Rate this video:</span>
+                            <button class="star">★</button>
+                            <button class="star">★</button>
+                            <button class="star">★</button>
+                            <button class="star">★</button>
+                            <button class="star">★</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="watch" class="watch">
+            <div class="container">
+                <h2>Watch "Procrastination" Now</h2>
+                <p>Experience 90 seconds of relatable procrastination in action.</p>
+                <div id="video-container">
+                    <iframe id="procrastination-video" width="560" height="315" src="https://www.youtube.com/embed/ffJ31LKTp4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">How long is the video?</div>
+                        <div class="accordion-content">The "Procrastination" video is exactly 90 seconds long.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Is the video suitable for all audiences?</div>
+                        <div class="accordion-content">Yes, the video is family-friendly and relatable to viewers of all ages who have ever procrastinated.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Can I share this video?</div>
+                        <div class="accordion-content">Absolutely! Feel free to share this video with fellow procrastinators or anyone who needs a gentle reminder about time management.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Adilbek Tursynbek. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="surveyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Quick Survey</h2>
+            <form id="surveyForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label>How often do you procrastinate?</label>
+                <select name="frequency" required>
+                    <option value="">Select an option</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="often">Often</option>
+                    <option value="always">Always</option>
+                </select>
+
+                <label>What's your biggest reason for procrastinating?</label>
+                <textarea name="reason" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
