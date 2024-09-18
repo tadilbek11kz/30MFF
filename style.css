@@ -220,7 +220,6 @@ footer ul li a {
     }
 }
 
-/* Responsive video container */
 #video-container {
     position: relative;
     width: 100%;
@@ -238,7 +237,6 @@ footer ul li a {
     height: 100%;
 }
 
-/* Burger menu */
 .burger-menu {
     display: none;
     cursor: pointer;
@@ -252,7 +250,6 @@ footer ul li a {
     transition: all 0.3s ease;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .burger-menu {
         display: block;
@@ -291,7 +288,6 @@ footer ul li a {
     }
 }
 
-/* Active state for accordion */
 .accordion-item.active .accordion-content {
     display: block;
 }
@@ -307,39 +303,27 @@ footer ul li a {
 
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1000;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 .modal-content {
     background-color: #fff;
-    /* Match your site's background */
     margin: auto;
     padding: 20px;
     border-radius: 8px;
-    /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Box shadow for depth */
     max-width: 500px;
-    /* Max width for modal */
 }
 
 .close {
     color: #aaa;
-    /* Close button color */
     float: right;
     font-size: 28px;
 }
@@ -347,7 +331,6 @@ footer ul li a {
 .close:hover,
 .close:focus {
     color: #dc2626;
-    /* Change color on hover */
 }
 
 #surveyForm {
@@ -364,21 +347,17 @@ footer ul li a {
 #surveyForm textarea {
     margin-top: 5px;
     padding: 10px;
-    /* Increased padding for inputs */
 }
 
 #surveyForm button {
     margin-top: 20px;
     padding: 10px;
     background-color: #dc2626;
-    /* Match your site's button color */
     color: white;
     border: none;
     border-radius: 5px;
-    /* Rounded corners for button */
 }
 
 #surveyForm button:hover {
     background-color: #b91c1c;
-    /* Darker shade on hover */
 }
